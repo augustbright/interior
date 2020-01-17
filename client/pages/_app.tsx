@@ -12,10 +12,10 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <meta name="description" content="Дизайн и ремонт вашего дома" />
+          <meta name="description" content="Дизайн и ремонт для вашего дома быстро и качественно"/>
           <meta name="author" content="August Bright" />
 
-          <title>Интериор+ - Дизайн и ремонт вашего дома</title>
+          <title>Интериор - Дизайн и ремонт для вашего дома быстро и качественно</title>
 
           <link
             href="vendor/bootstrap/css/bootstrap.min.css"
