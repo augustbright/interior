@@ -29,6 +29,7 @@ export default class BenefitThumbnail extends React.Component<
 
   render() {
     const toInvert = this.props.inverted ? "timeline-inverted" : "";
+    const toShowButton = this.props.detailHeading ? "" : "d-none";
 
     return (
       <li className={`${toInvert}`}>
@@ -48,7 +49,7 @@ export default class BenefitThumbnail extends React.Component<
             <p className="text-muted">{this.props.children}</p>
           </div>
           <a
-            className={`btn ${this.props.buttonSize} ${this.props.buttonStyle} mt-3`}
+            className={`btn ${toShowButton} ${this.props.buttonSize} ${this.props.buttonStyle} mt-3`}
             href={this.props.detailURL}
           >
             {this.props.detailHeading}

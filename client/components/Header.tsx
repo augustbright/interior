@@ -11,10 +11,11 @@ export default class Header extends React.Component {
               для вашего дома
             </div>
             <a
-              className="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+              className="btn btn-success btn-xl text-uppercase js-scroll-trigger"
               href="#services"
             >
               Заказать звонок
+              <i className={`fas fa-phone fa-inverse ml-2`}></i>
             </a>
           </div>
         </div>

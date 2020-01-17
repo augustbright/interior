@@ -4,7 +4,7 @@ import BenefitThumbnail from "./BenefitThumbnail";
 export default class Benefits extends React.Component {
   render() {
     return (
-      <section className="page-section" id="benefits">
+      <section className="bg-light page-section" id="benefits">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -61,11 +61,6 @@ export default class Benefits extends React.Component {
                   inverted
                   heading="Мы ждём вас!"
                   image="./img/about/1.jpg"
-                  detailHeading="Заказать звонок"
-                  detailURL="#reviews"
-                  buttonSize="btn-md"
-                  buttonStyle="btn-success"
-                  buttonIcon="fa-phone"
                 >
                   Закажите звонок и наш оператор свяжется с вами в ближайшее
                   время.
@@ -73,6 +68,20 @@ export default class Benefits extends React.Component {
               </ul>
             </div>
           </div>
+        
+          <div className="row justify-content-end mt-5">
+            <div className="col-auto">
+              <a className="btn btn-success btn-md" href="#call">
+                Заказать звонок
+                <span className="fa-stack fa-1x">
+                  <i
+                    className={`fas fa-phone fa-stack-1x fa-inverse`}
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
     );

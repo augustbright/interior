@@ -8,7 +8,7 @@ export default class Services extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Услуги</h2>
+              <h2 className="section-heading text-uppercase">Наши услуги</h2>
               <h3 className="section-subheading text-muted">
                 Мы выполним любые работы по дизайну ремонту для вашего дома.
               </h3>
@@ -36,7 +36,7 @@ export default class Services extends React.Component {
           <div className="row justify-content-end mt-5">
             <div className="col-auto">
               <a className="btn btn-primary btn-md" href="#services">
-                Подробнее об услугах и ценах
+                Калькулятор цен
                 <span className="fa-stack fa-1x">
                   <i className="fas fa-circle fa-stack-1x text-primary"></i>
                   <i

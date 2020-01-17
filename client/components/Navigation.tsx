@@ -12,7 +12,7 @@ export default class Navigation extends React.Component<NavigationProps> {
   render() {
     const toShrink = this.props.shrink ? "navbar-shrink" : "";
     return (
-      <nav className={`navbar navbar-expand-lg ${toShrink}`} id="mainNav">
+      <nav className={`navbar navbar-expand-lg fixed-top ${toShrink}`} id="mainNav">
         <div className="container">
           <a className="navbar-brand" href="#page-top">
             Интериор
@@ -33,7 +33,12 @@ export default class Navigation extends React.Component<NavigationProps> {
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#services">
-                  Услуги
+                  Услуги и цены
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#services">
+                  О нас
                 </a>
               </li>
               <li className="nav-item">
@@ -42,8 +47,8 @@ export default class Navigation extends React.Component<NavigationProps> {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">
-                  О нас
+                <a className="nav-link js-scroll-trigger" href="#portfolio">
+                  Отзывы
                 </a>
               </li>
               <li className="nav-item">
