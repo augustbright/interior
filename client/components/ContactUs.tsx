@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 const StyledSection = styled.section`
     background-color: ${props => props.theme.darkBG};
-    background-image: url(./img/map-image.png);
+    background-image: url(./img/contact-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 `;
 
 export default class ContactUs extends React.Component {

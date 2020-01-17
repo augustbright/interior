@@ -11,7 +11,7 @@ export default class Header extends React.Component {
               для вашего дома
             </div>
             <a
-              className="btn btn-success btn-xl text-uppercase js-scroll-trigger"
+              className="shadow-sm btn btn-success btn-xl text-uppercase js-scroll-trigger"
               href="#services"
             >
               Заказать звонок
