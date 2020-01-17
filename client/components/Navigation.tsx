@@ -44,7 +44,7 @@ export default class Navigation extends React.Component<NavigationProps> {
       >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            Декорзо
+            Интериор+
           </a>
           <button
             className="navbar-toggler navbar-toggler-right"

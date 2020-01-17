@@ -15,7 +15,7 @@ export default class MyApp extends App {
           <meta name="description" content="Дизайн и ремонт вашего дома" />
           <meta name="author" content="August Bright" />
 
-          <title>Decorzo - Дизайн и ремонт вашего дома</title>
+          <title>Интериор+ - Дизайн и ремонт вашего дома</title>
 
           <link
             href="vendor/bootstrap/css/bootstrap.min.css"
