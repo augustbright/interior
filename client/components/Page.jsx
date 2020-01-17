@@ -12,12 +12,10 @@ export default class Page extends React.Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <div className="container-fluid">
-          <Navigation />
-          {this.props.children}
-          <ContactUs />
-          <Footer />
-        </div>
+        <Navigation />
+        {this.props.children}
+        <ContactUs />
+        <Footer />
         <style jsx global>{agencyStyles}</style>
       </ThemeProvider>
     );
