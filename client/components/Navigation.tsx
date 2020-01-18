@@ -99,7 +99,7 @@ export default class Navigation extends React.PureComponent<
               <NavigationItem href="#reviews">
                 Отзывы
               </NavigationItem>
-              <NavigationItem href="#contacts">
+              <NavigationItem href="#contact">
                 Контакты
               </NavigationItem>
             </ScrollSpy>
