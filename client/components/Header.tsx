@@ -3,7 +3,7 @@ import React from "react";
 export default class Header extends React.Component {
   render() {
     return (
-      <header className="masthead">
+      <header className="masthead" id="page-top">
         <div className="container">
           <div className="intro-text">
             <div className="intro-lead-in">Создадим интерьер вашей мечты</div>

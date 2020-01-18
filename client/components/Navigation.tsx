@@ -1,4 +1,6 @@
 import React, { UIEvent } from "react";
+import ScrollSpy from "react-scrollspy";
+import NavigationItem from './NavigationItem';
 
 interface NavigationProps {
   shrinkMode: "on" | "off" | "scroll";
@@ -8,9 +10,12 @@ interface NavigationState {
   shrink: boolean;
 }
 
-export default class Navigation extends React.PureComponent<NavigationProps, NavigationState> {
+export default class Navigation extends React.PureComponent<
+  NavigationProps,
+  NavigationState
+> {
   static defaultProps: NavigationProps = {
-    shrinkMode: 'on'
+    shrinkMode: "on"
   };
 
   scrollHandler = null;
@@ -37,9 +42,9 @@ export default class Navigation extends React.PureComponent<NavigationProps, Nav
 
   componentDidUpdate(prevProps: NavigationProps) {
     if (this.props.shrinkMode === "off") {
-      this.setState({shrink: false});
+      this.setState({ shrink: false });
     } else if (this.props.shrinkMode === "on") {
-      this.setState({shrink: true});
+      this.setState({ shrink: true });
     }
   }
 
@@ -71,33 +76,33 @@ export default class Navigation extends React.PureComponent<NavigationProps, Nav
             <i className="fas fa-bars"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul className="navbar-nav text-uppercase ml-auto">
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#services">
-                  Услуги и цены
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#benefits">
-                  О нас
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">
-                  Наши работы
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#reviews">
-                  Отзывы
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+            <ScrollSpy
+              className="navbar-nav text-uppercase ml-auto"
+              items={[
+                "services",
+                "benefits",
+                "portfolio",
+                "reviews",
+                "contact"
+              ]}
+              currentClassName="active"
+            >
+              <NavigationItem href="#services">
+                Услуги и цены
+              </NavigationItem>
+              <NavigationItem href="#benefits">
+              О нас
+              </NavigationItem>
+              <NavigationItem href="#portfolio">
+                Наши работы
+              </NavigationItem>
+              <NavigationItem href="#reviews">
+                Отзывы
+              </NavigationItem>
+              <NavigationItem href="#contacts">
+                Контакты
+              </NavigationItem>
+            </ScrollSpy>
           </div>
         </div>
       </nav>
