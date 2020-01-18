@@ -12,7 +12,7 @@ export default class Page extends React.Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Navigation />
+        <Navigation shrinkMode="scroll"/>
         {this.props.children}
         <ContactUs />
         <Footer />

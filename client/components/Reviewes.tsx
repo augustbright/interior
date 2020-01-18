@@ -4,7 +4,7 @@ import ReviewItem from "./ReviewItem";
 export default class Reviews extends React.Component {
   render() {
     return (
-      <section className="bg-light page-section" id="team">
+      <section className="bg-light page-section" id="reviews">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">

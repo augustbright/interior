@@ -1,18 +1,59 @@
-import React from "react";
+import React, { UIEvent } from "react";
 
 interface NavigationProps {
-  shrink?: boolean;
+  shrinkMode: "on" | "off" | "scroll";
 }
 
-export default class Navigation extends React.Component<NavigationProps> {
+interface NavigationState {
+  shrink: boolean;
+}
+
+export default class Navigation extends React.PureComponent<NavigationProps, NavigationState> {
   static defaultProps: NavigationProps = {
-      shrink: true
+    shrinkMode: 'on'
+  };
+
+  scrollHandler = null;
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      shrink: this.props.shrinkMode === "on"
+    };
+  }
+
+  componentDidMount() {
+    const self = this;
+    this.scrollHandler = function(event: Event) {
+      if (self.props.shrinkMode === "scroll") {
+        self.setState({
+          shrink: this.scrollY > 100
+        });
+      }
+    };
+
+    window.addEventListener("scroll", this.scrollHandler);
+  }
+
+  componentDidUpdate(prevProps: NavigationProps) {
+    if (this.props.shrinkMode === "off") {
+      this.setState({shrink: false});
+    } else if (this.props.shrinkMode === "on") {
+      this.setState({shrink: true});
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.scrollHandler);
   }
 
   render() {
-    const toShrink = this.props.shrink ? "navbar-shrink" : "";
+    const toShrink = this.state.shrink ? "navbar-shrink" : "";
     return (
-      <nav className={`navbar navbar-expand-lg fixed-top ${toShrink}`} id="mainNav">
+      <nav
+        className={`navbar navbar-expand-lg fixed-top ${toShrink}`}
+        id="mainNav"
+      >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
             Интериор
@@ -37,17 +78,17 @@ export default class Navigation extends React.Component<NavigationProps> {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#services">
+                <a className="nav-link js-scroll-trigger" href="#benefits">
                   О нас
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#portfolio">
-                  Примеры работ
+                  Наши работы
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">
+                <a className="nav-link js-scroll-trigger" href="#reviews">
                   Отзывы
                 </a>
               </li>
