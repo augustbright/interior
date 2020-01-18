@@ -34,6 +34,7 @@ export default class MyApp extends App {
             content="Дизайн и ремонт для вашего дома быстро и качественно"
           />
           <meta name="author" content="August Bright" />
+          <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
 
           <title>
             Интериор - Дизайн и ремонт для вашего дома быстро и качественно

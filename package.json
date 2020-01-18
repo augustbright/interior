@@ -5,7 +5,8 @@
   "main": "start_server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node start_server"
+    "start": "node start_server",
+    "build": "npm i && next build ./client"
   },
   "repository": {
     "type": "git",
