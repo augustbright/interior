@@ -1,6 +1,20 @@
 import React from "react";
 import App from "next/app";
 import Head from "next/head";
+import Modal from "react-modal";
+
+Object.assign(Modal.defaultStyles.content, {
+  top: "50%",
+  left: "50%",
+  right: "auto",
+  bottom: "auto",
+  marginRight: "-50%",
+  transform: "translate(-50%, -50%)"
+});
+
+Object.assign(Modal.defaultStyles.overlay, {
+  backgroundColor: 'rgba(0, 0, 0, 0.75)'
+})
 
 export default class MyApp extends App {
   render() {
@@ -12,10 +26,15 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <meta name="description" content="Дизайн и ремонт для вашего дома быстро и качественно"/>
+          <meta
+            name="description"
+            content="Дизайн и ремонт для вашего дома быстро и качественно"
+          />
           <meta name="author" content="August Bright" />
 
-          <title>Интериор - Дизайн и ремонт для вашего дома быстро и качественно</title>
+          <title>
+            Интериор - Дизайн и ремонт для вашего дома быстро и качественно
+          </title>
 
           <link
             href="vendor/bootstrap/css/bootstrap.min.css"

@@ -1,4 +1,5 @@
 import React from "react";
+import CallMeButton from "./CallMeButton";
 
 export default class Header extends React.Component {
   render() {
@@ -7,16 +8,12 @@ export default class Header extends React.Component {
         <div className="container">
           <div className="intro-text">
             <div className="intro-lead-in">Создадим интерьер вашей мечты</div>
-            <div className="intro-heading text-uppercase">
-              для вашего дома
-            </div>
-            <a
-              className="shadow-sm btn btn-success btn-xl text-uppercase js-scroll-trigger"
-              href="#services"
-            >
-              Заказать звонок
-              <i className={`fas fa-phone fa-inverse ml-2`}></i>
-            </a>
+            <div className="intro-heading text-uppercase">для вашего дома</div>
+            <CallMeButton
+              caption="Заказать звонок"
+              size="xl"
+              className="shadow-sm text-uppercase"
+            />
           </div>
         </div>
       </header>
