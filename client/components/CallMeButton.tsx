@@ -1,4 +1,4 @@
-import React, { MouseEvent } from "react";
+import React, { MouseEvent, ReactElement } from "react";
 import Modal from "react-modal";
 import CallMe, { Stage } from "./CallMe";
 import Dialog from "./Dialog";
@@ -9,6 +9,7 @@ interface CallMeButtonProps {
   caption: string;
   size: Size;
   className: string;
+  icon?: ReactElement;
 }
 
 interface CallMeButtonState {
@@ -24,6 +25,10 @@ export default class CallMeButton extends React.Component<
   CallMeButtonProps,
   CallMeButtonState
 > {
+  static defaultProps = {
+    icon: <i className={`fas fa-phone fa-inverse ml-2`}></i>
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -92,7 +97,7 @@ export default class CallMeButton extends React.Component<
           onClick={this.onClick}
         >
           {this.props.caption}
-          <i className={`fas fa-phone fa-inverse ml-2`}></i>
+          {this.props.icon}
         </a>
         <Modal
           style={customStyle}
