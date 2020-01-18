@@ -10,7 +10,9 @@ Object.assign(Modal.defaultStyles.content, {
   bottom: "auto",
   marginRight: "-50%",
   transform: null,
-  padding: '0'
+  padding: '0',
+  maxHeight: '100vh',
+  overflowY: 'auto'
 });
 
 Object.assign(Modal.defaultStyles.overlay, {

@@ -32,7 +32,7 @@ export default class CallMe extends React.Component<CallMeProps> {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-6">
+            <div className="col-lg-6">
               <PhoneInput
                 country={"ru"}
                 placeholder="Ваш телефон *"
@@ -43,7 +43,7 @@ export default class CallMe extends React.Component<CallMeProps> {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-6">
+            <div className="col-lg-6">
               <input
                 type="text"
                 className="form-control mt-3"
