@@ -1,5 +1,6 @@
 import React from "react";
 import BenefitThumbnail from "./BenefitThumbnail";
+import CallMeButton from "./CallMeButton";
 
 export default class Benefits extends React.Component {
   render() {
@@ -68,20 +69,16 @@ export default class Benefits extends React.Component {
               </ul>
             </div>
           </div>
-        
+
           <div className="row justify-content-end mt-5">
             <div className="col-auto">
-              <a className="btn btn-success btn-md" href="#call">
-                Заказать звонок
-                <span className="fa-stack fa-1x">
-                  <i
-                    className={`fas fa-phone fa-stack-1x fa-inverse`}
-                  ></i>
-                </span>
-              </a>
+              <CallMeButton
+                caption="Заказать звонок"
+                size="md"
+                className="shadow-sm text-uppercase"
+              />
             </div>
           </div>
-
         </div>
       </section>
     );

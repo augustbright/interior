@@ -9,12 +9,13 @@ Object.assign(Modal.defaultStyles.content, {
   right: "auto",
   bottom: "auto",
   marginRight: "-50%",
-  transform: "translate(-50%, -50%)"
+  transform: null,
+  padding: '0'
 });
 
 Object.assign(Modal.defaultStyles.overlay, {
-  backgroundColor: 'rgba(0, 0, 0, 0.75)'
-})
+  backgroundColor: "rgba(0, 0, 0, 0.75)"
+});
 
 export default class MyApp extends App {
   render() {
