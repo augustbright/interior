@@ -9,6 +9,9 @@ export interface IJobOption<OptionType> {
 export interface IJobDefinition {
   key: string;
   heading: string;
+  subheading: string;
+  explanation: string;
+  image: string;
   options: IJobOption<number | boolean>[];
   basePrice: number;
 }
@@ -22,7 +25,10 @@ export interface IJobConfiguration {
 const defaultJobs: IJobDefinition[] = [
   {
     key: "lightRepair",
-    heading: "Легкий ремонт",
+    heading: "Обычный ремонт",
+    subheading: "600 рублей за кв.м.",
+    explanation: "Быстрый и чистый ремонт, покраска стен, поклейка обоев, укладка ламината/паркета, установка дверей.",
+    image: 'img/portfolio/01-thumbnail.jpg',
     basePrice: 0,
     options: [
       {
@@ -31,19 +37,15 @@ const defaultJobs: IJobDefinition[] = [
         type: "number",
         defaultValue: 0,
         effect: (price: number, value: number) => price + value * 600
-      },
-      {
-        key: "urgent",
-        heading: "Срочно",
-        type: "boolean",
-        defaultValue: false,
-        effect: (price: number, value: boolean) => value ? price * 1.5 : price
       }
     ]
   },
   {
     key: "fullRepair",
     heading: "Капитальный ремонт",
+    subheading: "1000 рублей за кв.м.",
+    explanation: "Полный ремонт помещений, выравнивание стен, перепланировка, смена дверных проемов.",
+    image: 'img/portfolio/02-thumbnail.jpg',
     basePrice: 0,
     options: [
       {
@@ -52,19 +54,15 @@ const defaultJobs: IJobDefinition[] = [
         type: "number",
         defaultValue: 0,
         effect: (price: number, value: number) => price + value * 1000
-      },
-      {
-        key: "urgent",
-        heading: "Срочно",
-        type: "boolean",
-        defaultValue: false,
-        effect: (price: number, value: boolean) => value ? price * 1.5 : price
       }
     ]
   },
   {
     key: "design",
     heading: "Дизайн интерьера",
+    subheading: "3000 рублей за помещение/комнату",
+    explanation: "Помощь квалифицированных дизайнеров в разработке будущего интерьера.",
+    image: 'img/portfolio/03-thumbnail.jpg',
     basePrice: 0,
     options: [
       {

@@ -35,7 +35,7 @@ export default class Services extends React.Component {
           </div>
           <div className="row justify-content-end mt-5">
             <div className="col-auto">
-              <a className="btn btn-primary btn-md" href="#services">
+              <a className="btn btn-primary btn-md" href="/calculator">
                 Калькулятор цен
                 <span className="fa-stack fa-1x">
                   <i className="fas fa-circle fa-stack-1x text-primary"></i>

@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import Dialog from "../Dialog";
 import { IJobDefinition } from "./jobs";
 import JobDefinitionItem from "./JobDefinitionItem";
+import JobsListToChoose from "./JobsListToChoose";
 
 interface IAddJobButtonProps {
   jobs: IJobDefinition[];
@@ -46,14 +47,7 @@ export default class AddJobButton extends React.Component<
 
         <Modal isOpen={this.state.isOpen} onRequestClose={() => this.close()}>
           <Dialog heading="Добавить работу" onRequestClose={() => this.close()}>
-            {this.props.jobs.map(job => (
-              <JobDefinitionItem
-                jobDefinition={job}
-                onSelected={() => {
-                  this.props.onRequestAdd(job);
-                }}
-              />
-            ))}
+            <JobsListToChoose jobs={this.props.jobs} onRequestAdd={this.props.onRequestAdd}/>
           </Dialog>
         </Modal>
       </React.Fragment>
