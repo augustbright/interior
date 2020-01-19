@@ -2,6 +2,8 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 import Modal from "react-modal";
+import agencyStyles from '../styles/agency.css?type=global';
+import _JSXStyle from 'styled-jsx/style';
 
 Object.assign(Modal.defaultStyles.content, {
   top: "50%",
@@ -72,6 +74,7 @@ export default class MyApp extends App {
           />
         </Head>
         <Component {...pageProps} />
+        <style jsx global>{agencyStyles}</style>
       </>
     );
   }
