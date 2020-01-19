@@ -20,37 +20,148 @@ export default class Portfolio extends React.Component {
               heading="Офис. Москва, Малая Пролетарская"
               annotation="Ремонт помещений под нужды бизнеса в сфере услуг"
               imgSrc="img/portfolio/01-thumbnail.jpg"
-              href="#portfolioItem01"
+
+              date="Август, 2017"
+              detail="Заказ был очень нестандартный, но мы считаем, что получилось отлично!"
+              client="Геннадий"
+              category="Ремонт офисов"
+              slides={[
+                {
+                  original: 'img/portfolio/01-full.jpg',
+                  thumbnail: 'img/portfolio/01-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                }
+              ]}
             />
             <PortfolioThumbnail
               heading="Офис. Москва, Проспект Октября"
               annotation="Капитальный ремонт и обустройство помещений с нуля"
               imgSrc="img/portfolio/02-thumbnail.jpg"
-              href="#portfolioItem02"
+
+              date="Август, 2017"
+              detail="Заказ был очень нестандартный, но мы считаем, что получилось отлично!"
+              client="Геннадий"
+              category="Ремонт офисов"
+              slides={[
+                {
+                  original: 'img/portfolio/01-full.jpg',
+                  thumbnail: 'img/portfolio/01-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                }
+              ]}
             />
             <PortfolioThumbnail
               heading="Детский сад. Москва, Громова 42"
               annotation="Частный детский сад, капитальный ремонт детских комнат"
               imgSrc="img/portfolio/03-thumbnail.jpg"
-              href="#portfolioItem03"
+
+              date="Август, 2017"
+              detail="Заказ был очень нестандартный, но мы считаем, что получилось отлично!"
+              client="Геннадий"
+              category="Ремонт офисов"
+              slides={[
+                {
+                  original: 'img/portfolio/01-full.jpg',
+                  thumbnail: 'img/portfolio/01-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                }
+              ]}
+
             />
             <PortfolioThumbnail
               heading="Кафе. Москва, Громова 17"
               annotation="Дизайн и ремонт помещения для гостей"
               imgSrc="img/portfolio/04-thumbnail.jpg"
-              href="#portfolioItem04"
+
+              date="Август, 2017"
+              detail="Заказ был очень нестандартный, но мы считаем, что получилось отлично!"
+              client="Геннадий"
+              category="Ремонт офисов"
+              slides={[
+                {
+                  original: 'img/portfolio/01-full.jpg',
+                  thumbnail: 'img/portfolio/01-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                }
+              ]}
+
             />
             <PortfolioThumbnail
               heading="Частный дом. Санкт-Петербург"
               annotation="Ремонт помещений по проекту заказчика."
               imgSrc="img/portfolio/05-thumbnail.jpg"
-              href="#portfolioItem05"
+
+              date="Август, 2017"
+              detail="Заказ был очень нестандартный, но мы считаем, что получилось отлично!"
+              client="Геннадий"
+              category="Ремонт офисов"
+              slides={[
+                {
+                  original: 'img/portfolio/01-full.jpg',
+                  thumbnail: 'img/portfolio/01-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                }
+              ]}
+
             />
             <PortfolioThumbnail
               heading="Детская комната"
               annotation="Дизайн и обустройство детской комнаты."
               imgSrc="img/portfolio/06-thumbnail.jpg"
-              href="#portfolioItem06"
+
+              date="Август, 2017"
+              detail="Заказ был очень нестандартный, но мы считаем, что получилось отлично!"
+              client="Геннадий"
+              category="Ремонт офисов"
+              slides={[
+                {
+                  original: 'img/portfolio/01-full.jpg',
+                  thumbnail: 'img/portfolio/01-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                },
+                {
+                  original: 'img/portfolio/02-full.jpg',
+                  thumbnail: 'img/portfolio/02-thumbnail.jpg'
+                }
+              ]}
             />
           </div>
 
