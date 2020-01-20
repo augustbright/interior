@@ -1,5 +1,5 @@
 import React from "react";
-import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery';
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 
 interface IPortfolioViewerProps {
   subheading: string;
@@ -23,7 +23,7 @@ export default class PortfolioViewer extends React.Component<
         </div>
         <div className="row justify-content-center">
           <div className="col-auto">
-              <ImageGallery items={this.props.slides}/>
+            <ImageGallery infinite={true} items={this.props.slides} />
             <p>{this.props.detail}</p>
           </div>
         </div>
