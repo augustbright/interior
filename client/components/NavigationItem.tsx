@@ -6,7 +6,7 @@ interface NavigationItemProps {
   onSelected: () => void;
 }
 
-export default class NavigationItem extends React.PureComponent<
+export default class NavigationItem extends React.Component<
   NavigationItemProps
 > {
   render() {
@@ -15,7 +15,7 @@ export default class NavigationItem extends React.PureComponent<
     const isActive = classes.includes("active");
     classes.push("nav-item");
 
-    const aClasses = ["nav-link", "js-scroll-trigger"];
+    const aClasses = ["nav-link", "js-scroll-trigger", "font-weight-bold"];
     if (isActive) {
       aClasses.push("active");
     }
