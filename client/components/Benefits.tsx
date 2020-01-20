@@ -38,8 +38,6 @@ export default class Benefits extends React.Component {
                   heading="Мы гарантируем качество."
                   subheading="И бесплатно устраним любые возникшие проблемы."
                   image="./img/about/2.jpg"
-                  detailHeading="Подробнее о гарантии"
-                  detailURL="#garanty"
                 >
                   Наши клиенты могут рассчитывать на{" "}
                   <strong>высокое качество</strong> выполненных работ.

@@ -56,13 +56,6 @@ export default class CallMe extends React.Component<CallMeProps> {
               />
             </div>
           </div>
-          <div className="row justify-content-center mt-5">
-            <div className="col-auto">
-              <p className="text-muted">
-                Наш оператор свяжется с вами в ближайшее время.
-              </p>
-            </div>
-          </div>
         </div>
       </form>
     );
@@ -71,9 +64,14 @@ export default class CallMe extends React.Component<CallMeProps> {
   renderThanksStage() {
       return (
         <div className="container-flud">
+          <div className="row justify-content-center my-3">
+            <div className="col-auto">
+              <i className="fa fa-check fa-3x text-secondary"></i>
+            </div>
+          </div>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <h5 className="text-muted my-5">
+              <h5 className="text-muted">
                 Наш оператор свяжется с вами в ближайшее время!
               </h5>
             </div>

@@ -17,6 +17,7 @@ interface CallMeButtonState {
   stage: Stage;
   phone: string;
   name: string;
+  alert: string;
 }
 
 const customStyle = { content: { minWidth: "50%" } };
@@ -27,7 +28,7 @@ export default class CallMeButton extends React.Component<
 > {
   static defaultProps = {
     icon: <i className={`fas fa-phone fa-inverse ml-2`}></i>
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -35,7 +36,8 @@ export default class CallMeButton extends React.Component<
       isOpen: false,
       stage: "input",
       phone: "",
-      name: ""
+      name: "",
+      alert: ""
     };
     this.onClick = this.onClick.bind(this);
     this.onClickSubmit = this.onClickSubmit.bind(this);
@@ -50,14 +52,25 @@ export default class CallMeButton extends React.Component<
     this.setState({ isOpen: false, stage: "input" });
   }
 
+  validateData(): boolean {
+    if (this.state.phone.length === 18) {
+      this.setState({alert: ''});
+      return true;
+    }
+    this.setState({alert: 'Пожалуйста, укажите номер телефона.'});
+    return false;
+  }
+
   onClickSubmit(event: MouseEvent) {
     event.preventDefault();
-    
+
     if (this.state.stage === "input") {
-      this.setState({ stage: "pending" });
-      setTimeout(() => {
-        this.setState({ stage: "thanks" });
-      }, 2000);
+      if (this.validateData()) {
+        this.setState({ stage: "pending" });
+        setTimeout(() => {
+          this.setState({ stage: "thanks" });
+        }, 2000);  
+      }
       return;
     }
 
@@ -85,9 +98,12 @@ export default class CallMeButton extends React.Component<
 
   render() {
     const footer = (
-      <a className="btn btn-success" href="#" onClick={this.onClickSubmit}>
-        {this.submitButtonContent()}
-      </a>
+      <React.Fragment>
+        <span className="text-danger col">{this.state.alert}</span>
+        <a className="btn btn-success" href="#" onClick={this.onClickSubmit}>
+          {this.submitButtonContent()}
+        </a>
+      </React.Fragment>
     );
     return (
       <>

@@ -52,7 +52,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
               caption=""
               size="xl"
               icon={<i className={`fas fa-phone fa-inverse`}></i>}
-              className={`${toShowFixedCall} shadow call-detached py-2 px-3`}
+              className={`${toShowFixedCall} p-0 shadow call-detached d-flex justify-content-center align-items-center`}
             />
           </div>
         </div>
