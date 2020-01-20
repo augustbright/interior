@@ -48,6 +48,13 @@ export default class MyApp extends App {
             Интериор - Дизайн и ремонт для вашего дома быстро и качественно
           </title>
 
+          {/* OG tags */}
+          <meta property="og:title" content="Интериор"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content="https://interior-yar.herokuapp.com/"/>
+          <meta property="og:image" content="https://interior-yar.herokuapp.com/img/portfolio/07-full.jpg"/>
+          <meta property="og:description" content="Дизайн и ремонт для вашего дома быстро и качественно"/>
+          <meta property="og:locale" content="ru_RU"/>
           <link
             href="vendor/bootstrap/css/bootstrap.min.css"
             rel="stylesheet"
