@@ -17,6 +17,7 @@ interface NavigationProps {
 
 interface NavigationState {
   shrink: boolean;
+  isOpen: boolean;
 }
 
 export default class Navigation extends React.Component<
@@ -33,7 +34,8 @@ export default class Navigation extends React.Component<
   constructor(props) {
     super(props);
     this.state = {
-      shrink: this.props.shrinkMode === "on"
+      shrink: this.props.shrinkMode === "on",
+      isOpen: false
     };
   }
 
@@ -62,8 +64,21 @@ export default class Navigation extends React.Component<
     window.removeEventListener("scroll", this.scrollHandler);
   }
 
+  toggle() {
+    this.setState(state => ({
+      isOpen: !state.isOpen
+    }));
+  }
+
+  close() {
+    this.setState({
+      isOpen: false
+    });
+  }
+
   render() {
     const toShrink = this.state.shrink ? "navbar-shrink" : "";
+    const toOpen = this.state.isOpen ? "show" : "";
     const itemsToSpy = this.props.items
       .filter(item => item.spy)
       .map(item => item.href.replace("#", ""));
@@ -78,6 +93,7 @@ export default class Navigation extends React.Component<
             Интериор
           </a>
           <button
+            onClick={() => this.toggle()}
             className="navbar-toggler navbar-toggler-right"
             type="button"
             data-toggle="collapse"
@@ -89,14 +105,21 @@ export default class Navigation extends React.Component<
             Меню
             <i className="fas fa-bars"></i>
           </button>
-          <div className="collapse navbar-collapse" id="navbarResponsive">
+          <div
+            className={`collapse navbar-collapse ${toOpen}`}
+            id="navbarResponsive"
+          >
             <ScrollSpy
               className="navbar-nav text-uppercase ml-auto"
               items={itemsToSpy}
               currentClassName="active"
             >
               {this.props.items.map(item => (
-                <NavigationItem key={item.heading} href={item.href}>
+                <NavigationItem
+                  onSelected={() => this.close()}
+                  key={item.heading}
+                  href={item.href}
+                >
                   {item.heading}
                 </NavigationItem>
               ))}

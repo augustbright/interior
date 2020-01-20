@@ -3,6 +3,7 @@ import React from "react";
 interface NavigationItemProps {
   href: string;
   className?: string;
+  onSelected: () => void;
 }
 
 export default class NavigationItem extends React.PureComponent<
@@ -21,7 +22,13 @@ export default class NavigationItem extends React.PureComponent<
 
     return (
       <li className={classes.join(" ")}>
-        <a className={aClasses.join(" ")} href={this.props.href}>
+        <a
+          onClick={() => {
+            this.props.onSelected();
+          }}
+          className={aClasses.join(" ")}
+          href={this.props.href}
+        >
           {this.props.children}
         </a>
       </li>
