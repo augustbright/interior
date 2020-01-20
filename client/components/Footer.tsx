@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-4">
-                  <span className="copyright">Copyright &copy; Decorzo 2019</span>
+                  <span className="copyright">Copyright &copy; Interior 2019</span>
                 </div>
                 <div className="col-md-4">
                   <ul className="list-inline social-buttons">
