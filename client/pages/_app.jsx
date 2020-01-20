@@ -4,7 +4,11 @@ import Head from "next/head";
 import Modal from "react-modal";
 import agencyStyles from '../styles/agency.css?type=global';
 import galleryStyles from 'react-image-gallery/styles/css/image-gallery.css?type=global';
+import chatStyles from 'react-chat-widget/lib/styles.css?type=global';
 import _JSXStyle from 'styled-jsx/style';
+import dynamic from 'next/dynamic';
+
+const ChatWidget = dynamic(() => import('react-chat-widget').then(mod => mod.Widget), {ssr: false});
 
 Object.assign(Modal.defaultStyles.content, {
   top: "50%",
@@ -25,6 +29,11 @@ Object.assign(Modal.defaultStyles.overlay, {
 export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
+    if (typeof window === 'object') {
+      console.log('this is client');
+    } else {
+
+    }
     return (
       <>
         <Head>
@@ -75,8 +84,15 @@ export default class MyApp extends App {
           />
         </Head>
         <Component {...pageProps} />
+        <ChatWidget 
+          title="Чат с консультантом" 
+          subtitle="Мы всегда на связи"
+          senderPlaceHolder="Напишите сообщение..." 
+          titleAvatar="img/team/2.jpg"
+        />
         <style jsx global>{agencyStyles}</style>
         <style jsx global>{galleryStyles}</style>
+        <style jsx global>{chatStyles}</style>
       </>
     );
   }
