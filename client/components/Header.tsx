@@ -41,7 +41,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
       <header ref={this.headerRef} className="masthead" id="page-top">
         <div className="container">
           <div className="intro-text">
-            <div className="intro-lead-in">Создадим интерьер вашей мечты</div>
+            <div className="intro-lead-in">Интерьер вашей мечты</div>
             <div className="intro-heading text-uppercase">для вашего дома</div>
             <CallMeButton
               caption="Заказать звонок"

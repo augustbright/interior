@@ -104,6 +104,14 @@ h6 {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.rcw-widget-container {
+  z-index: 2000;
+}
+
+.text-shadow {
+  text-shadow: black 1px 1px 1px;
+}
+
 @media (min-width: 768px) {
   section {
     padding: 150px 0;

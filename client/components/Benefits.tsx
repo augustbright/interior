@@ -59,7 +59,7 @@ export default class Benefits extends React.Component {
                 <BenefitThumbnail
                   inverted
                   heading="Мы ждём вас!"
-                  image="./img/about/1.jpg"
+                  image="./img/about/4.jpg"
                 >
                   Закажите звонок и наш оператор свяжется с вами в ближайшее
                   время.

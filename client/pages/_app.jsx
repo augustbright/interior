@@ -72,10 +72,8 @@ export default class MyApp extends App {
             rel="stylesheet"
             type="text/css"
           />
-          <link
-            href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+          <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" 
             rel="stylesheet"
-            type="text/css"
           />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"

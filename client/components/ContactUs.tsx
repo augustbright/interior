@@ -15,9 +15,9 @@ export default class ContactUs extends React.Component {
       <StyledSection className="page-section" id="contact">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Напишите нам</h2>
-              <h3 className="section-subheading text-muted">
+            <div className="col-lg-12 text-center text-shadow">
+              <h2 className="section-heading text-uppercase text-light">Напишите нам</h2>
+              <h3 className="section-subheading text-light">
                 Будем рады ответить на любой ваш вопрос!
               </h3>
             </div>
