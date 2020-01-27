@@ -53,5 +53,101 @@
             }
         },
         "price calculator": "Price calculator"
+    },
+    "benefits": {
+        "heading": "Why people choose us?",
+        "subheading": "Here are some of our benefits...",
+        "1": {
+            "heading": "We are professionals",
+            "subheading": "Take a look and be sure!",
+            "detailsHeading": "Examples of our work",
+            "text": {
+                "interior is a leading repairs company": "Interior is a leading repairs company with",
+                "more than 10 years": "more than 10 years",
+                "of experience": "of experience, and during this time we have done",
+                "more than 300 orders": "more than 300 orders",
+                "we know everything about repairs and we love it": "We know everything about repairs and we love it"
+            }
+        },
+        "2": {
+            "heading": "Quality guaranteed",
+            "subheading": "Any subsequentional problem we will fix for free",
+            "text": {
+                "our clients can expect": "Our clients can expect",
+                "high level of quality": "hight level of quality",
+                "of work": "of work"
+            }
+        },
+
+        "3": {
+            "heading": "Our clients are thankful.",
+            "subheading": "And we appreciate that.",
+            "detailsHeading": "Our reviews",
+            "text": {
+                "we believe that a cozy, beautiful and modern home repair means joy and happy life": "We believe that a cozy, beautiful and modern home repair means joy and happy life",
+                "your thankful reviews is our best reward": "Your thankful reviews is our best reward"
+            }
+        },
+
+        "4": {
+            "heading": "We are waiting for you!",
+            "text": {
+                "order a call and our operator will call you as soon as possible": "Order a call and our operator will call you as soon as possible"
+            }
+        },
+
+        "orderACall": "Order a call"
+    },
+    "portfolio": {
+        "heading": "Our works",
+        "subheading": "We are proud to introduce you some of our previous projects.",
+        "1": {
+            "heading": "Office. Moscow. Malaya Proletarskaya",
+            "annotation": "Room repairs for buisiness",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "2": {
+            "heading": "Office. Moscow. Octabrya Prospect",
+            "annotation": "Full repair of rooms from sctarch",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "3": {
+            "heading": "Kindergarten. Moscow. Gromova 42",
+            "annotation": "Full repair of children rooms in a private kindergarten.",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "4": {
+            "heading": "Cafe. Moscow, Gromova 17",
+            "annotation": "Design and repair of a diningroom",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "5": {
+            "heading": "Private house, Saints Petersburg",
+            "annotation": "Rooms repairs on client's project",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "6": {
+            "heading": "Child room",
+            "annotation": "Designing and repair of a children room",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        }
     }
 }
