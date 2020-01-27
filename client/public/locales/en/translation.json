@@ -101,6 +101,12 @@
     "portfolio": {
         "heading": "Our works",
         "subheading": "We are proud to introduce you some of our previous projects.",
+        "viewer": {
+            "close": "Close project",
+            "date": "Date",
+            "client": "Client",
+            "category": "Category"
+        },
         "1": {
             "heading": "Office. Moscow. Malaya Proletarskaya",
             "annotation": "Room repairs for buisiness",

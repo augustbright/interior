@@ -1,7 +1,9 @@
 import React from "react";
 import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
+import { WithTranslation } from "next-i18next";
+import { withTranslation } from "../../../lib/i18n";
 
-interface IPortfolioViewerProps {
+interface IPortfolioViewerProps extends WithTranslation {
   subheading: string;
   date: string;
   detail: string;
@@ -10,33 +12,35 @@ interface IPortfolioViewerProps {
   slides: ReactImageGalleryItem[];
 }
 
-export default class PortfolioViewer extends React.Component<
-  IPortfolioViewerProps
-> {
-  render() {
-    return (
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-auto">
-            <p className="item-intro text-muted">{this.props.subheading}</p>
+export default withTranslation()(
+  class PortfolioViewer extends React.Component<IPortfolioViewerProps> {
+    render() {
+      const {t} = this.props;
+
+      return (
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <p className="item-intro text-muted">{this.props.subheading}</p>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <ImageGallery infinite={true} items={this.props.slides} />
+              <p>{this.props.detail}</p>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <ul className="list-inline">
+                <li>{t("portfolio.viewer.date")}: {this.props.date}</li>
+                <li>{t("portfolio.viewer.client")}: {this.props.client}</li>
+                <li>{t("portfolio.viewer.category")}: {this.props.category}</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="row justify-content-center">
-          <div className="col-auto">
-            <ImageGallery infinite={true} items={this.props.slides} />
-            <p>{this.props.detail}</p>
-          </div>
-        </div>
-        <div className="row justify-content-center">
-          <div className="col-auto">
-            <ul className="list-inline">
-              <li>Дата: {this.props.date}</li>
-              <li>Клиент: {this.props.client}</li>
-              <li>Категория: {this.props.category}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
+      );
+    }
   }
-}
+);
