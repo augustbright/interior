@@ -23,7 +23,7 @@ export default withTranslation()(
     headerRef: RefObject<any> = null;
 
     componentDidMount() {
-      Object.defineProperty(window, 'i18n', i18n);
+      Object.defineProperty(window, 'i18n', {value: i18n});
       const self = this;
       this.scrollHandler = function(event: Event) {
         self.setState({

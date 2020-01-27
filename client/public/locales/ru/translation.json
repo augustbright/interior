@@ -1,4 +1,257 @@
 {
-    "introLeadIn": "Интерьер вашей мечты",
-    "introHeading": "Для вашего дома"
+    "introLeadIn": "The design of your dream",
+    "introHeading": "For your home",
+    "orderACall": "Call me",
+    "companyTitle": "Interior",
+    "title": {
+        "company": "Interior",
+        "menu": "Menu",
+        "copyright": "Copyright",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfUse": "Terms Of Use"
+    },
+    "section": {
+        "heading": {
+            "services": "Services & Prices",
+            "aboutUs": "About Us",
+            "ourWorks": "Our Works",
+            "reviews": "Reviews",
+            "contacts": "Contact Us"
+        }
+    },
+    "services": {
+        "heading": "Our Services",
+        "subheading": "We will do any design or repair work for your home",
+        "repair": {
+            "heading": "Room Repairs",
+            "text": {
+                "our best specialists will make a": "Our best specialists will make a",
+                "nice repair": "nice repair",
+                "in": "in",
+                "short terms": "short terms",
+                "of your home or office": "of your home or office"
+            }
+        },
+        "design": {
+            "heading": "Interior Design",
+            "text": {
+                "we will help you implement": "We will help you implement",
+                "your ideas": "your ideas",
+                "and make": "and make",
+                "the best": "the best",
+                "design of your interior": "design of your interior for you"
+            }
+        },
+        "consulting": {
+            "heading": "Free Consulting",
+            "text": {
+                "we are always glad to introduce you": "We are always glad to introduce you",
+                "our help": "our help",
+                "and answer": "and answer",
+                "any your questions": "any your questions",
+                "call us": "Call us"
+            }
+        },
+        "price calculator": "Price calculator"
+    },
+    "benefits": {
+        "heading": "Why people choose us?",
+        "subheading": "Here are some of our benefits...",
+        "1": {
+            "heading": "We are professionals",
+            "subheading": "Take a look and be sure!",
+            "detailsHeading": "Examples of our work",
+            "text": {
+                "interior is a leading repairs company": "Interior is a leading repairs company with",
+                "more than 10 years": "more than 10 years",
+                "of experience": "of experience, and during this time we have done",
+                "more than 300 orders": "more than 300 orders",
+                "we know everything about repairs and we love it": "We know everything about repairs and we love it"
+            }
+        },
+        "2": {
+            "heading": "Quality guaranteed",
+            "subheading": "Any subsequentional problem we will fix for free",
+            "text": {
+                "our clients can expect": "Our clients can expect",
+                "high level of quality": "hight level of quality",
+                "of work": "of work"
+            }
+        },
+
+        "3": {
+            "heading": "Our clients are thankful.",
+            "subheading": "And we appreciate that.",
+            "detailsHeading": "Our reviews",
+            "text": {
+                "we believe that a cozy, beautiful and modern home repair means joy and happy life": "We believe that a cozy, beautiful and modern home repair means joy and happy life",
+                "your thankful reviews is our best reward": "Your thankful reviews is our best reward"
+            }
+        },
+
+        "4": {
+            "heading": "We are waiting for you!",
+            "text": {
+                "order a call and our operator will call you as soon as possible": "Order a call and our operator will call you as soon as possible"
+            }
+        },
+
+        "orderACall": "Order a call"
+    },
+    "portfolio": {
+        "heading": "Our works",
+        "subheading": "We are proud to introduce you some of our previous projects.",
+        "viewer": {
+            "close": "Close project",
+            "date": "Date",
+            "client": "Client",
+            "category": "Category"
+        },
+        "1": {
+            "heading": "Office. Moscow. Malaya Proletarskaya",
+            "annotation": "Room repairs for buisiness",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "2": {
+            "heading": "Office. Moscow. Octabrya Prospect",
+            "annotation": "Full repair of rooms from sctarch",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "3": {
+            "heading": "Kindergarten. Moscow. Gromova 42",
+            "annotation": "Full repair of children rooms in a private kindergarten.",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "4": {
+            "heading": "Cafe. Moscow, Gromova 17",
+            "annotation": "Design and repair of a diningroom",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "5": {
+            "heading": "Private house, Saints Petersburg",
+            "annotation": "Rooms repairs on client's project",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        },
+        "6": {
+            "heading": "Child room",
+            "annotation": "Designing and repair of a children room",
+            "date": "August, 2017",
+            "detail": "The order was extraordinary, but we did it well!",
+            "client": "Gennadiy",
+            "category": "Office repairs"
+        }
+    },
+    "reviews": {
+        "heading": "Our reviews",
+        "subheading": "We are always glad to get a feedback from you.",
+        "1": {
+            "name": "Aleksandra",
+            "project": "Office. Moscow, Malaya Proletarskaya",
+            "message": "Everything was good. The repair was done quickly and well. Thanks, Interior!"
+        },
+        "2": {
+            "name": "Michael",
+            "project": "Children room",
+            "message": "We are glad:)"
+        },
+        "3": {
+            "name": "Elena",
+            "project": "Cafe. Moscow, Gromova 17",
+            "message": "They helped us with planning, materials and colors, thanks!"
+        },
+        "outro": "We appreciate all your feedback and try to develop and grow for you!"
+    },
+    "contacts": {
+        "heading": "Contact Us",
+        "subheading": "We are glad to answer your questions",
+        "name": {
+            "placeholder": "Your name *",
+            "requied message": "Please, enter your name."
+        },
+        "email": {
+            "placeholder": "Your email *",
+            "requied message": "Please, enter your email."
+        },
+        "phone": {
+            "placeholder": "Your phone *",
+            "requied message": "Please, enter your phone number."
+        },
+        "message": {
+            "placeholder": "Message *",
+            "requied message": "Please, enter your message."
+        },
+        "send": "Send"
+    },
+    "call me": {
+        "validate": {
+            "phone number": "Please, enter your phone number."
+        },
+        "button": {
+            "order": "Order",
+            "thanks": "Thanks!",
+            "done": "Done"
+        },
+        "dialog": {
+            "heading": "Order a call",
+            "leave us your phone number and we will call you": "Please, leave us your phone number and we will call you:",
+            "our operator will call you as soon as possible": "Our operator will call you as soon as possible",
+            "your phone": "Your phone *",
+            "your name": "Your name"
+        }
+    },
+    "calculator": {
+        "heading": "Price calculator",
+        "choose service": "Choose a service",
+        "add job": "Add a job",
+        "total": "Total",
+        "currency": "$",
+        "jobs": {
+            "1": {
+                "heading": "Simple repair",
+                "subheading": "600$ per m^2",
+                "explanation": "Quick and clean, wall painting, wallpapers, floor, doors...",
+                "options": {
+                    "1": {
+                        "heading": "Area (m^2)"
+                    }
+                }
+            },
+
+            "2": {
+                "heading": "Full repair",
+                "subheading": "900$ per m^2",
+                "explanation": "Full repair of rooms, walls...",
+                "options": {
+                    "1": {
+                        "heading": "Area (m^2)"
+                    }
+                }
+            },
+            "3": {
+                "heading": "Interior design",
+                "subheading": "2000$ per room",
+                "explanation": "A help of qualified designers in development of your interior",
+                "options": {
+                    "1": {
+                        "heading": "Count of rooms"
+                    }
+                }
+            }
+        }
+    }
 }
