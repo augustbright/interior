@@ -1,0 +1,57 @@
+{
+    "introLeadIn": "The design of your dream",
+    "introHeading": "For your home",
+    "orderACall": "Call me",
+    "companyTitle": "Interior",
+    "title": {
+        "company": "Interior",
+        "menu": "Menu",
+        "copyright": "Copyright",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfUse": "Terms Of Use"
+    },
+    "section": {
+        "heading": {
+            "services": "Services & Prices",
+            "aboutUs": "About Us",
+            "ourWorks": "Our Works",
+            "reviews": "Reviews",
+            "contacts": "Contact Us"
+        }
+    },
+    "services": {
+        "heading": "Our Services",
+        "subheading": "We will do any design or repair work for your home",
+        "repair": {
+            "heading": "Room Repairs",
+            "text": {
+                "our best specialists will make a": "Our best specialists will make a",
+                "nice repair": "nice repair",
+                "in": "in",
+                "short terms": "short terms",
+                "of your home or office": "of your home or office"
+            }
+        },
+        "design": {
+            "heading": "Interior Design",
+            "text": {
+                "we will help you implement": "We will help you implement",
+                "your ideas": "your ideas",
+                "and make": "and make",
+                "the best": "the best",
+                "design of your interior": "design of your interior for you"
+            }
+        },
+        "consulting": {
+            "heading": "Free Consulting",
+            "text": {
+                "we are always glad to introduce you": "We are always glad to introduce you",
+                "our help": "our help",
+                "and answer": "and answer",
+                "any your questions": "any your questions",
+                "call us": "Call us"
+            }
+        },
+        "price calculator": "Price calculator"
+    }
+}

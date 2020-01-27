@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import agencyStyles from '../styles/agency.css?type=global';
 import galleryStyles from 'react-image-gallery/styles/css/image-gallery.css?type=global';
 import _JSXStyle from 'styled-jsx/style';
+import {appWithTranslation} from '../../lib/i18n';
 
 Object.assign(Modal.defaultStyles.content, {
   top: "50%",
@@ -22,7 +23,7 @@ Object.assign(Modal.defaultStyles.overlay, {
   backgroundColor: "rgba(0, 0, 0, 0.75)"
 });
 
-export default class MyApp extends App {
+export default appWithTranslation(class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     if (typeof window === 'object') {
@@ -90,4 +91,4 @@ export default class MyApp extends App {
       </>
     );
   }
-}
+});

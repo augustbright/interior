@@ -3,6 +3,8 @@ import express from 'express';
 import next from 'next';
 import {log, color} from '../lib/logger';
 import { Server } from 'http';
+import nextI18NextInstance from '../lib/i18n';
+import nextI18NextMiddleware from 'next-i18next/middleware';
 
 type NodeEnv = 'development' | 'production';
 
@@ -13,6 +15,10 @@ interface EnvVariables {
 
 export default module.exports = async function start(env: EnvVariables): Promise<Server> {
     const expressApp = express();
+
+    // Set up server i18n
+    await nextI18NextInstance.initPromise;
+    expressApp.use(nextI18NextMiddleware(nextI18NextInstance));
 
     // Prepare Next.js
     const nextApp = next({

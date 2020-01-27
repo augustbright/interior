@@ -6,47 +6,52 @@ import Benefits from "../components/Benefits";
 import Portfolio from "../components/Portfolio";
 import Reviewes from "../components/Reviewes";
 import ContactUs from "../components/ContactUs";
+import { withTranslation } from "../../lib/i18n";
+import { WithTranslation } from "next-i18next";
 
-export default class Index extends React.Component {
-  render() {
-    return (
-      <Page
-        navigationShrink="scroll"
-        navigationItems={[
-          {
-            heading: "Услуги и цены",
-            href: "#services",
-            spy: true
-          },
-          {
-            heading: "О нас",
-            href: "#benefits",
-            spy: true
-          },
-          {
-            heading: "Наши работы",
-            href: "#portfolio",
-            spy: true
-          },
-          {
-            heading: "Отзывы",
-            href: "#reviews",
-            spy: true
-          },
-          {
-            heading: "Контакты",
-            href: "#contact",
-            spy: true
-          }
-        ]}
-      >
-        <Header />
-        <Services />
-        <Benefits />
-        <Portfolio />
-        <Reviewes />
-        <ContactUs />
-      </Page>
-    );
+export default withTranslation()(
+  class Index extends React.Component<WithTranslation> {
+    render() {
+      const { t } = this.props;
+      return (
+        <Page
+          navigationShrink="scroll"
+          navigationItems={[
+            {
+              heading: t("section.heading.services"),
+              href: "#services",
+              spy: true
+            },
+            {
+              heading: t("section.heading.aboutUs"),
+              href: "#benefits",
+              spy: true
+            },
+            {
+              heading: t("section.heading.ourWorks"),
+              href: "#portfolio",
+              spy: true
+            },
+            {
+              heading: t("section.heading.reviews"),
+              href: "#reviews",
+              spy: true
+            },
+            {
+              heading: t("section.heading.contacts"),
+              href: "#contact",
+              spy: true
+            }
+          ]}
+        >
+          <Header />
+          <Services />
+          <Benefits />
+          <Portfolio />
+          <Reviewes />
+          <ContactUs />
+        </Page>
+      );
+    }
   }
-}
+);
