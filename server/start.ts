@@ -20,6 +20,9 @@ export default module.exports = async function start(env: EnvVariables): Promise
     await nextI18NextInstance.initPromise;
     expressApp.use(nextI18NextMiddleware(nextI18NextInstance));
 
+    // A fix for next-i18next lang resolving
+    expressApp.use('/client/public/', express.static(path.join(__dirname, '../client/public/')));
+
     // Prepare Next.js
     const nextApp = next({
         dev: env.NODE_ENV == 'development',

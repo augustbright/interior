@@ -5,7 +5,7 @@ const NextI18NextInstance = new NextI18Next({
     serverLanguageDetection: false,
     defaultLanguage: 'en',    
     defaultNS: 'translation',
-    localePath: '/client/public/locales',
+    localePath: 'client/public/locales',
     otherLanguages: ['ru']
 });
 

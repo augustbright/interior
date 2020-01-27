@@ -1,254 +1,254 @@
 {
-    "introLeadIn": "The design of your dream",
-    "introHeading": "For your home",
-    "orderACall": "Call me",
-    "companyTitle": "Interior",
+    "introLeadIn": "Интерьер вашей мечты",
+    "introHeading": "Для вашего дома",
+    "orderACall": "Заказать звонок",
+    "companyTitle": "Интериор",
     "title": {
-        "company": "Interior",
-        "menu": "Menu",
+        "company": "Интериор",
+        "menu": "Меню",
         "copyright": "Copyright",
-        "privacyPolicy": "Privacy Policy",
-        "termsOfUse": "Terms Of Use"
+        "privacyPolicy": "Политика конфиденциальности",
+        "termsOfUse": "Пользовательское соглашение"
     },
     "section": {
         "heading": {
-            "services": "Services & Prices",
-            "aboutUs": "About Us",
-            "ourWorks": "Our Works",
-            "reviews": "Reviews",
-            "contacts": "Contact Us"
+            "services": "Услуги и цены",
+            "aboutUs": "О нас",
+            "ourWorks": "Наши работы",
+            "reviews": "Отзывы",
+            "contacts": "Контакты"
         }
     },
     "services": {
-        "heading": "Our Services",
-        "subheading": "We will do any design or repair work for your home",
+        "heading": "Наши услуги",
+        "subheading": "Мы выполним любые работы по дизайну ремонту для вашего дома",
         "repair": {
-            "heading": "Room Repairs",
+            "heading": "Ремонт помещений",
             "text": {
-                "our best specialists will make a": "Our best specialists will make a",
-                "nice repair": "nice repair",
-                "in": "in",
-                "short terms": "short terms",
-                "of your home or office": "of your home or office"
+                "our best specialists will make a": "Наши лучшие специалисты готовы сделать",
+                "nice repair": "качественный ремонт",
+                "in": "в",
+                "short terms": "короткие сроки",
+                "of your home or office": "в вашем доме или офисе"
             }
         },
         "design": {
-            "heading": "Interior Design",
+            "heading": "Дизайн интерьеров",
             "text": {
-                "we will help you implement": "We will help you implement",
-                "your ideas": "your ideas",
-                "and make": "and make",
-                "the best": "the best",
-                "design of your interior": "design of your interior for you"
+                "we will help you implement": "Поможем воплотить",
+                "your ideas": "ваши идеи",
+                "and make": "в жизнь и разработать для вас",
+                "the best": "лучший",
+                "design of your interior": "дизайн вашего интерьера"
             }
         },
         "consulting": {
-            "heading": "Free Consulting",
+            "heading": "Бесплатная консультация",
             "text": {
-                "we are always glad to introduce you": "We are always glad to introduce you",
-                "our help": "our help",
-                "and answer": "and answer",
-                "any your questions": "any your questions",
-                "call us": "Call us"
+                "we are always glad to introduce you": "Мы всегда на связи и готовы предоставить вам",
+                "our help": "помощь",
+                "and answer": "и ответить на",
+                "any your questions": "любые ваши вопросы",
+                "call us": "Пишите"
             }
         },
-        "price calculator": "Price calculator"
+        "price calculator": "Калькулятор цен"
     },
     "benefits": {
-        "heading": "Why people choose us?",
-        "subheading": "Here are some of our benefits...",
+        "heading": "Почему нас выбирают?",
+        "subheading": "Вот лишь некоторые из наши преимуществ...",
         "1": {
-            "heading": "We are professionals",
-            "subheading": "Take a look and be sure!",
-            "detailsHeading": "Examples of our work",
+            "heading": "Мы - профессионалы ремонта",
+            "subheading": "Взгялине и убедитесь сами!",
+            "detailsHeading": "Примеры наших работ",
             "text": {
-                "interior is a leading repairs company": "Interior is a leading repairs company with",
-                "more than 10 years": "more than 10 years",
-                "of experience": "of experience, and during this time we have done",
-                "more than 300 orders": "more than 300 orders",
-                "we know everything about repairs and we love it": "We know everything about repairs and we love it"
+                "interior is a leading repairs company": "Интериор - лидер рынке ремонта с",
+                "more than 10 years": "более чем 10 летним",
+                "of experience": "стажем, и за это время мы выполнили",
+                "more than 300 orders": "свыше 300 работ",
+                "we know everything about repairs and we love it": "Мы знаем о ремонте всё и любим наше дело"
             }
         },
         "2": {
-            "heading": "Quality guaranteed",
-            "subheading": "Any subsequentional problem we will fix for free",
+            "heading": "Мы гарантируем качество",
+            "subheading": "И бесплатно устраним любые возникшие проблемы",
             "text": {
-                "our clients can expect": "Our clients can expect",
-                "high level of quality": "hight level of quality",
-                "of work": "of work"
+                "our clients can expect": "Наши клиенты могут рассчитывать на",
+                "high level of quality": "высокое качество",
+                "of work": "выполненных работ"
             }
         },
 
         "3": {
-            "heading": "Our clients are thankful.",
-            "subheading": "And we appreciate that.",
-            "detailsHeading": "Our reviews",
+            "heading": "Наши клиенты нам благодарны",
+            "subheading": "И мы это ценим.",
+            "detailsHeading": "Отзывы о нас",
             "text": {
-                "we believe that a cozy, beautiful and modern home repair means joy and happy life": "We believe that a cozy, beautiful and modern home repair means joy and happy life",
-                "your thankful reviews is our best reward": "Your thankful reviews is our best reward"
+                "we believe that a cozy, beautiful and modern home repair means joy and happy life": "Мы верим, что уютный, красивый и современный ремонт в доме - залог радости и счастливой жизни",
+                "your thankful reviews is our best reward": "Ваши благодарные отзывы для нас лучшая награда"
             }
         },
 
         "4": {
-            "heading": "We are waiting for you!",
+            "heading": "Мы ждём вас!",
             "text": {
-                "order a call and our operator will call you as soon as possible": "Order a call and our operator will call you as soon as possible"
+                "order a call and our operator will call you as soon as possible": "Закажите звонок и наш оператор свяжется с вами в ближайшее время"
             }
         },
 
-        "orderACall": "Order a call"
+        "orderACall": "Заказать звонок"
     },
     "portfolio": {
-        "heading": "Our works",
-        "subheading": "We are proud to introduce you some of our previous projects.",
+        "heading": "Наши работы",
+        "subheading": "С гордостью представляем вам некоторые из наших прошлых проектов.",
         "viewer": {
-            "close": "Close project",
-            "date": "Date",
-            "client": "Client",
-            "category": "Category"
+            "close": "Закрыть проект",
+            "date": "Дата",
+            "client": "Клиент",
+            "category": "Категория"
         },
         "1": {
-            "heading": "Office. Moscow. Malaya Proletarskaya",
-            "annotation": "Room repairs for buisiness",
-            "date": "August, 2017",
-            "detail": "The order was extraordinary, but we did it well!",
-            "client": "Gennadiy",
-            "category": "Office repairs"
+            "heading": "Офис. Москва. Малая Пролетарская",
+            "annotation": "Ремонт помещений под нужды бизнеса в сфере услуг",
+            "date": "Август, 2017",
+            "detail": "Заказ был очень нестандартный, но мы считаем, что получилось отлично!",
+            "client": "Геннадий",
+            "category": "Ремонт офисов"
         },
         "2": {
-            "heading": "Office. Moscow. Octabrya Prospect",
-            "annotation": "Full repair of rooms from sctarch",
-            "date": "August, 2017",
-            "detail": "The order was extraordinary, but we did it well!",
-            "client": "Gennadiy",
-            "category": "Office repairs"
+            "heading": "Офис. Москва. Проспект Октября",
+            "annotation": "Капитальный ремонт и обустройство помещений с нуля",
+            "date": "Август, 2017",
+            "detail": "Заказ был очень нестандартный, но мы считаем, что получилось отлично!",
+            "client": "Геннадий",
+            "category": "Ремонт офисов"
         },
         "3": {
-            "heading": "Kindergarten. Moscow. Gromova 42",
-            "annotation": "Full repair of children rooms in a private kindergarten.",
-            "date": "August, 2017",
-            "detail": "The order was extraordinary, but we did it well!",
-            "client": "Gennadiy",
-            "category": "Office repairs"
+            "heading": "Детский сад. Москва, Громова 42",
+            "annotation": "Частный детский сад, капитальный ремонт детских комнат",
+            "date": "Август, 2017",
+            "detail": "Заказ был очень нестандартный, но мы считаем, что получилось отлично!",
+            "client": "Геннадий",
+            "category": "Ремонт офисов"
         },
         "4": {
-            "heading": "Cafe. Moscow, Gromova 17",
-            "annotation": "Design and repair of a diningroom",
-            "date": "August, 2017",
-            "detail": "The order was extraordinary, but we did it well!",
-            "client": "Gennadiy",
-            "category": "Office repairs"
+            "heading": "Кафе. Москва, Громова 17",
+            "annotation": "Дизайн и ремонт помещения для гостей",
+            "date": "Август, 2017",
+            "detail": "Заказ был очень нестандартный, но мы считаем, что получилось отлично!",
+            "client": "Геннадий",
+            "category": "Ремонт офисов"
         },
         "5": {
-            "heading": "Private house, Saints Petersburg",
-            "annotation": "Rooms repairs on client's project",
-            "date": "August, 2017",
-            "detail": "The order was extraordinary, but we did it well!",
-            "client": "Gennadiy",
-            "category": "Office repairs"
+            "heading": "Частный дом. Санкт-Петербург",
+            "annotation": "Ремонт помещений по проекту заказчика",
+            "date": "Август, 2017",
+            "detail": "Заказ был очень нестандартный, но мы считаем, что получилось отлично!",
+            "client": "Геннадий",
+            "category": "Ремонт офисов"
         },
         "6": {
-            "heading": "Child room",
-            "annotation": "Designing and repair of a children room",
-            "date": "August, 2017",
-            "detail": "The order was extraordinary, but we did it well!",
-            "client": "Gennadiy",
-            "category": "Office repairs"
+            "heading": "Детская комната",
+            "annotation": "Дизайн и обустройство детской комнаты",
+            "date": "Август, 2017",
+            "detail": "Заказ был очень нестандартный, но мы считаем, что получилось отлично!",
+            "client": "Геннадий",
+            "category": "Ремонт офисов"
         }
     },
     "reviews": {
-        "heading": "Our reviews",
-        "subheading": "We are always glad to get a feedback from you.",
+        "heading": "Отзывы о нас",
+        "subheading": "Мы всегда рады получить от вас обратную связь.",
         "1": {
-            "name": "Aleksandra",
-            "project": "Office. Moscow, Malaya Proletarskaya",
-            "message": "Everything was good. The repair was done quickly and well. Thanks, Interior!"
+            "name": "Александра",
+            "project": "Офис. Москва, Малая Пролетарская",
+            "message": "Всё очень понравилось. Ремонт офиса выполнили быстро и качественно. Спасибо, Интериор!"
         },
         "2": {
-            "name": "Michael",
-            "project": "Children room",
-            "message": "We are glad:)"
+            "name": "Михаил",
+            "project": "Детская комната",
+            "message": "Возникла необходимость сделать детскую комнату вместо бывшей гостинной. Все получилось хорошо и красиво, ребенок доволен и мы тоже:)"
         },
         "3": {
-            "name": "Elena",
-            "project": "Cafe. Moscow, Gromova 17",
-            "message": "They helped us with planning, materials and colors, thanks!"
+            "name": "Елена",
+            "project": "Кафе. Москва, Громова 17",
+            "message": "Компания Интериор занималась обустройством помещения для гостей в нашем кафе. Также они помогли нам с планировкой помещения, подбором материалов и цветов, за что им огромное спасибо!"
         },
-        "outro": "We appreciate all your feedback and try to develop and grow for you!"
+        "outro": "Мы учитываем все ваши пожелания, чтобы развиваться и становиться лучше. Мы рады любым вашим отзывам!"
     },
     "contacts": {
-        "heading": "Contact Us",
-        "subheading": "We are glad to answer your questions",
+        "heading": "Напишите нам",
+        "subheading": "Будем рады ответить на любой ваш вопрос!",
         "name": {
-            "placeholder": "Your name *",
-            "requied message": "Please, enter your name."
+            "placeholder": "Ваше Имя *",
+            "requied message": "Пожалуйста, укажите ваше имя."
         },
         "email": {
-            "placeholder": "Your email *",
-            "requied message": "Please, enter your email."
+            "placeholder": "Ваш Email *",
+            "requied message": "Пожалуйста, укажите ваш email."
         },
         "phone": {
-            "placeholder": "Your phone *",
-            "requied message": "Please, enter your phone number."
+            "placeholder": "Ваш Телефон *",
+            "requied message": "Пожалуйста, укажите ваш номер телефона."
         },
         "message": {
-            "placeholder": "Message *",
-            "requied message": "Please, enter your message."
+            "placeholder": "Ваш Вопрос *",
+            "requied message": "Пожалуйста, напишите текст сообщения."
         },
         "send": "Send"
     },
     "call me": {
         "validate": {
-            "phone number": "Please, enter your phone number."
+            "phone number": "Пожалуйста, укажите ваш номер телефона."
         },
         "button": {
-            "order": "Order",
-            "thanks": "Thanks!",
-            "done": "Done"
+            "order": "Заказать",
+            "thanks": "Спасибо!",
+            "done": "Готово"
         },
         "dialog": {
-            "heading": "Order a call",
-            "leave us your phone number and we will call you": "Please, leave us your phone number and we will call you:",
-            "our operator will call you as soon as possible": "Our operator will call you as soon as possible",
-            "your phone": "Your phone *",
-            "your name": "Your name"
+            "heading": "Заказать обратный звонок",
+            "leave us your phone number and we will call you": "Пожалуйста, отставьте ваш номер телефона, и мы вам позвоним:",
+            "our operator will call you as soon as possible": "Наш оператор свяжется с вами в ближайшее время",
+            "your phone": "Ваш телефон *",
+            "your name": "Ваше имя"
         }
     },
     "calculator": {
-        "heading": "Price calculator",
-        "choose service": "Choose a service",
-        "add job": "Add a job",
-        "total": "Total",
-        "currency": "$",
+        "heading": "Калькулятор цен",
+        "choose service": "Выберите нужную вам услугу",
+        "add job": "Добавить работу",
+        "total": "Итого",
+        "currency": "р",
         "jobs": {
             "1": {
-                "heading": "Simple repair",
-                "subheading": "600$ per m^2",
-                "explanation": "Quick and clean, wall painting, wallpapers, floor, doors...",
+                "heading": "Обычный ремонт",
+                "subheading": "600 рублей за кв.м.",
+                "explanation": "Быстрый и чистый ремонт, покраска стен, поклейка обоев, укладка ламината/паркета, установка дверей.",
                 "options": {
                     "1": {
-                        "heading": "Area (m^2)"
+                        "heading": "Площадь (кв.м)"
                     }
                 }
             },
 
             "2": {
-                "heading": "Full repair",
-                "subheading": "900$ per m^2",
-                "explanation": "Full repair of rooms, walls...",
+                "heading": "Капитальный ремонт",
+                "subheading": "1000 рублей за кв.м.",
+                "explanation": "Полный ремонт помещений, выравнивание стен, перепланировка, смена дверных проемов.",
                 "options": {
                     "1": {
-                        "heading": "Area (m^2)"
+                        "heading": "Площадь (кв.м)"
                     }
                 }
             },
             "3": {
-                "heading": "Interior design",
-                "subheading": "2000$ per room",
-                "explanation": "A help of qualified designers in development of your interior",
+                "heading": "Дизайн интерьера",
+                "subheading": "3000 рублей за помещение/комнату",
+                "explanation": "Помощь квалифицированных дизайнеров в разработке будущего интерьера.",
                 "options": {
                     "1": {
-                        "heading": "Count of rooms"
+                        "heading": "Количество комнат"
                     }
                 }
             }
