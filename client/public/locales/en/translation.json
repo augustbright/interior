@@ -149,5 +149,25 @@
             "client": "Gennadiy",
             "category": "Office repairs"
         }
+    },
+    "reviews": {
+        "heading": "Our reviews",
+        "subheading": "We are always glad to get a feedback from you.",
+        "1": {
+            "name": "Aleksandra",
+            "project": "Office. Moscow, Malaya Proletarskaya",
+            "message": "Everything was good. The repair was done quickly and well. Thanks, Interior!"
+        },
+        "2": {
+            "name": "Michael",
+            "project": "Children room",
+            "message": "We are glad:)"
+        },
+        "3": {
+            "name": "Elena",
+            "project": "Cafe. Moscow, Gromova 17",
+            "message": "They helped us with planning, materials and colors, thanks!"
+        },
+        "outro": "We appreciate all your feedback and try to develop and grow for you!"
     }
 }
