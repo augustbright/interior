@@ -190,5 +190,22 @@
             "requied message": "Please, enter your message."
         },
         "send": "Send"
+    },
+    "call me": {
+        "validate": {
+            "phone number": "Please, enter your phone number."
+        },
+        "button": {
+            "order": "Order",
+            "thanks": "Thanks!",
+            "done": "Done"
+        },
+        "dialog": {
+            "heading": "Order a call",
+            "leave us your phone number and we will call you": "Please, leave us your phone number and we will call you:",
+            "our operator will call you as soon as possible": "Our operator will call you as soon as possible",
+            "your phone": "Your phone *",
+            "your name": "Your name"
+        }
     }
 }

@@ -1,5 +1,7 @@
 import React, { ChangeEvent } from "react";
 import PhoneInput from "react-phone-input-2";
+import { WithTranslation } from "next-i18next";
+import { withTranslation } from "../../lib/i18n";
 
 export type Stage = "input" | "pending" | "thanks";
 
@@ -11,7 +13,7 @@ interface OnChangeNameHandler {
   (name: string): void;
 }
 
-interface CallMeProps {
+interface CallMeProps extends WithTranslation {
   phone: string;
   name: string;
   stage: Stage;
@@ -19,49 +21,55 @@ interface CallMeProps {
   onChangeName: OnChangeNameHandler;
 }
 
-export default class CallMe extends React.Component<CallMeProps> {
-  renderInputStage() {
-    return (
-      <form>
-        <div className="container-flud">
-          <div className="row justify-content-center">
-            <div className="col-auto">
-              <p className="text-muted">
-                Пожалуйста, отставьте ваш номер телефона, и мы вам позвоним:
-              </p>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <PhoneInput
-                country={"ru"}
-                placeholder="Ваш телефон *"
-                onlyCountries={["ru"]}
-                value={this.props.phone}
-                onChange={this.props.onChangePhone}
-              />
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <input
-                type="text"
-                className="form-control mt-3"
-                id="usr"
-                placeholder="Ваше имя"
-                value={this.props.name}
-                onChange={(event: ChangeEvent) =>
-                  this.props.onChangeName(event.target.nodeValue)
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </form>
-    );
-  }
+export default withTranslation()(
+  class CallMe extends React.Component<CallMeProps> {
+    renderInputStage() {
+      const { t } = this.props;
 
-  renderThanksStage() {
+      return (
+        <form>
+          <div className="container-flud">
+            <div className="row justify-content-center">
+              <div className="col-auto">
+                <p className="text-muted">
+                  {t(
+                    "call me.dialog.leave us your phone number and we will call you"
+                  )}
+                </p>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-lg-6">
+                <PhoneInput
+                  country={"ru"}
+                  placeholder={t("call me.dialog.your phone")}
+                  onlyCountries={["ru"]}
+                  value={this.props.phone}
+                  onChange={this.props.onChangePhone}
+                />
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-lg-6">
+                <input
+                  type="text"
+                  className="form-control mt-3"
+                  id="usr"
+                  placeholder={t("call me.dialog.your name")}
+                  value={this.props.name}
+                  onChange={(event: ChangeEvent) =>
+                    this.props.onChangeName(event.target.nodeValue)
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      );
+    }
+
+    renderThanksStage() {
+      const { t } = this.props;
       return (
         <div className="container-flud">
           <div className="row justify-content-center my-3">
@@ -72,21 +80,25 @@ export default class CallMe extends React.Component<CallMeProps> {
           <div className="row justify-content-center">
             <div className="col-auto">
               <h5 className="text-muted">
-                Наш оператор свяжется с вами в ближайшее время!
+                {t(
+                  "call me.dialog.our operator will call you as soon as possible"
+                )}
+                !
               </h5>
             </div>
           </div>
         </div>
       );
-  }
+    }
 
-  render() {
-    switch (this.props.stage) {
-      default:
-      case "input":
-        return this.renderInputStage();
-      case "thanks":
-        return this.renderThanksStage();
+    render() {
+      switch (this.props.stage) {
+        default:
+        case "input":
+          return this.renderInputStage();
+        case "thanks":
+          return this.renderThanksStage();
+      }
     }
   }
-}
+);
