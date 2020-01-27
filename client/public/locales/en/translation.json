@@ -169,5 +169,26 @@
             "message": "They helped us with planning, materials and colors, thanks!"
         },
         "outro": "We appreciate all your feedback and try to develop and grow for you!"
+    },
+    "contacts": {
+        "heading": "Contact Us",
+        "subheading": "We are glad to answer your questions",
+        "name": {
+            "placeholder": "Your name *",
+            "requied message": "Please, enter your name."
+        },
+        "email": {
+            "placeholder": "Your email *",
+            "requied message": "Please, enter your email."
+        },
+        "phone": {
+            "placeholder": "Your phone *",
+            "requied message": "Please, enter your phone number."
+        },
+        "message": {
+            "placeholder": "Message *",
+            "requied message": "Please, enter your message."
+        },
+        "send": "Send"
     }
 }
