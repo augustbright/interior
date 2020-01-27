@@ -207,5 +207,45 @@
             "your phone": "Your phone *",
             "your name": "Your name"
         }
+    },
+    "calculator": {
+        "heading": "Price calculator",
+        "choose service": "Choose a service",
+        "add job": "Add a job",
+        "total": "Total",
+        "currency": "$",
+        "jobs": {
+            "1": {
+                "heading": "Simple repair",
+                "subheading": "600$ per m^2",
+                "explanation": "Quick and clean, wall painting, wallpapers, floor, doors...",
+                "options": {
+                    "1": {
+                        "heading": "Area (m^2)"
+                    }
+                }
+            },
+
+            "2": {
+                "heading": "Full repair",
+                "subheading": "900$ per m^2",
+                "explanation": "Full repair of rooms, walls...",
+                "options": {
+                    "1": {
+                        "heading": "Area (m^2)"
+                    }
+                }
+            },
+            "3": {
+                "heading": "Interior design",
+                "subheading": "2000$ per room",
+                "explanation": "A help of qualified designers in development of your interior",
+                "options": {
+                    "1": {
+                        "heading": "Count of rooms"
+                    }
+                }
+            }
+        }
     }
 }
