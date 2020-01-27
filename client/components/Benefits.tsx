@@ -36,7 +36,7 @@ export default withTranslation()(
                     detailURL="#portfolio"
                   >
                     {t("benefits.1.text.interior is a leading repairs company")}{" "}
-                    <strong>{t("benefits.1.text.more than 10 years")}</strong>
+                    <strong>{t("benefits.1.text.more than 10 years")}</strong>{" "}
                     {t("benefits.1.text.of experience")}{" "}
                     <strong>{t("benefits.1.text.more than 300 orders")}</strong>
                     .{" "}
