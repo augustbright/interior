@@ -48,6 +48,37 @@ html {
   opacity: 0;
 }
 
+.hover-nav-item {
+  position: relative;
+}
+
+.hover-nav-dropdown {
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.hover-nav-dropdown > .nav-link {
+  display: none;
+}
+
+.hover-nav-item:hover > .hover-nav-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.hover-nav-item:hover > .hover-nav-dropdown > .nav-link {
+  display: block;
+}
+
+.navbar.navbar-shrink .hover-nav-dropdown {
+  background-color: #212529;
+}
+
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",

@@ -1,6 +1,7 @@
 import React, { UIEvent } from "react";
 import ScrollSpy from "react-scrollspy";
 import NavigationItem from "./NavigationItem";
+import LanguageSwitch from "./LanguageSwitch";
 import { WithTranslation } from "react-i18next";
 import { withTranslation } from "../../lib/i18n";
 
@@ -80,7 +81,7 @@ export default withTranslation()(
     }
 
     render() {
-      const {t} = this.props;
+      const { t } = this.props;
       const toShrink = this.state.shrink ? "navbar-shrink" : "";
       const toOpen = this.state.isOpen ? "show" : "";
       const itemsToSpy = this.props.items
@@ -109,6 +110,9 @@ export default withTranslation()(
               {t("title.menu")}
               <i className="fas fa-bars"></i>
             </button>
+            <div className="d-block d-md-none">
+              <LanguageSwitch />
+            </div>
             <div
               className={`collapse navbar-collapse ${toOpen}`}
               id="navbarResponsive"
@@ -128,6 +132,9 @@ export default withTranslation()(
                   </NavigationItem>
                 ))}
               </ScrollSpy>
+            </div>
+            <div className="d-none d-md-block">
+              <LanguageSwitch />
             </div>
           </div>
         </nav>

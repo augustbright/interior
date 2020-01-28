@@ -3,6 +3,11 @@
     "introHeading": "For your home",
     "orderACall": "Call me",
     "companyTitle": "Interior",
+    "language": {
+        "current language": "Language",
+        "name": "English",
+        "flag": "/img/flag/us.svg"
+    },
     "title": {
         "company": "Interior",
         "menu": "Menu",

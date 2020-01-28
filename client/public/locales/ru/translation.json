@@ -3,6 +3,11 @@
     "introHeading": "Для вашего дома",
     "orderACall": "Заказать звонок",
     "companyTitle": "Интериор",
+    "language": {
+        "current language": "Язык",
+        "name": "Русский",
+        "flag": "/img/flag/ru.svg"
+    },
     "title": {
         "company": "Интериор",
         "menu": "Меню",
