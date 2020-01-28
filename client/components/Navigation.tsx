@@ -94,7 +94,7 @@ export default withTranslation()(
           id="mainNav"
         >
           <div className="container">
-            <a className="navbar-brand" href="/#page-top">
+            <a className="navbar-brand flex-grow-1" href="/#page-top">
               {t("title.company")}
             </a>
             <button
