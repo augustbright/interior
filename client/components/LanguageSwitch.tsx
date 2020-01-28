@@ -2,6 +2,7 @@ import React, { MouseEvent } from "react";
 import styled from "styled-components";
 import { WithTranslation } from "next-i18next";
 import { withTranslation } from "../../lib/i18n";
+import Cookies from 'js-cookie';
 
 type Language = "ru" | "en";
 
@@ -36,6 +37,7 @@ export default withTranslation()(
     onSetLanguage(event: MouseEvent, language: Language): void {
       event.preventDefault();
       const { i18n } = this.props;
+      Cookies.set('next-i18next', language);
       i18n.changeLanguage(language);
     }
 

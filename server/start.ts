@@ -1,5 +1,6 @@
 import path from 'path';
 import express from 'express';
+import cookieParser from 'cookie-parser';
 import next from 'next';
 import {log, color} from '../lib/logger';
 import { Server } from 'http';
@@ -16,12 +17,21 @@ interface EnvVariables {
 export default module.exports = async function start(env: EnvVariables): Promise<Server> {
     const expressApp = express();
 
+    // Cookies
+    expressApp.use(cookieParser());
+
     // Set up server i18n
     await nextI18NextInstance.initPromise;
     expressApp.use(nextI18NextMiddleware(nextI18NextInstance));
 
     // A fix for next-i18next lang resolving
     expressApp.use('/client/public/', express.static(path.join(__dirname, '../client/public/')));
+
+    expressApp.use(async (req, res, next) => {
+        const lang = req.cookies['next-i18next'] || 'en';
+        await req.i18n.changeLanguage(lang);
+        next();
+    });
 
     // Prepare Next.js
     const nextApp = next({
