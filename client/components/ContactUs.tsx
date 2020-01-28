@@ -11,6 +11,7 @@ const StyledSection = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 `;
 
 export default withTranslation()(
