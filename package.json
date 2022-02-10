@@ -59,7 +59,7 @@
     "@types/styled-components": "^4.4.2",
     "babel-plugin-styled-components": "^1.10.6",
     "css-loader": "^3.4.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.2"
   }
